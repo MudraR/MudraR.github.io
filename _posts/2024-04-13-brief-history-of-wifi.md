@@ -2,6 +2,7 @@
 layout: post
 title: A Brief History of 802.11 (Wi-Fi)
 date: 2024-04-13 03:41 -0500
+mermaid: true
 ---
 
 As I look to purchase a new router, I wanted to be reminded of what the latest standards (Wi-Fi 7) actually introduce compared to the other 802.11 standards.
