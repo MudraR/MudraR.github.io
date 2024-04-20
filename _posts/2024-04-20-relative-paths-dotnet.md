@@ -5,7 +5,6 @@ date: 2024-04-19 15:23 -0500
 tags: [powershell, dotnet]
 ---
 
-# .NET Methods don't expand paths
 Relative paths are interpreted differently in .NET methods than in PowerShell.
 
 ## Problem
