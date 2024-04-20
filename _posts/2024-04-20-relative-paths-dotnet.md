@@ -17,7 +17,7 @@ While PowerShell automatically resolves relative paths based on the current dire
 ## Resolution
 I resolved it by calling the class using the expanded full path of the certificate. 
 
-```PowerShell
+```powershell
 [Security.Cryptography.X509Certificates.X509Certificate2]::New([System.IO.Path]::GetFullPath((Join-Path (Get-Location) $Certificate)))
 ```
 
