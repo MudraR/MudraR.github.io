@@ -1,12 +1,17 @@
 ---
 layout: post
-title: OSPF Convergence
+title: OSPF Convergence with Messages, Data Structures and the Dijkstra Algorithm
 date: 2021-01-05 02:29 -0500
 categories: [CCNA]
 tags: [Routing and Switching]
 ---
-# OSPF Convergence with Messages, Data Structures and the Dijkstra Algorithm
+# What is OSPF?
 
+Open Shortest Path First (OSPF) is a link-state routing protocol that uses the Dijkstra's Shortest Path First (SPF) Algorithm to calculate the best paths through the network. 
+
+OSPF is a classless, vendor-neutral routing protocol that supports VLSM and CIDR. It sends the entire routing table to its neighbors, which is called the Link State Database (LSDB). OSPF routers use the LSDB to calculate the best routes through the network.
+
+Convergence in OSPF is the process of routers learning about the network topology and creating the best routes through the network. Convergence is the process of establishing OSPF neighbor adjacencies, creating the Link State Database (LSDB), and calculating the best routes through the network.
 
 ## Messages Used in OSPF Convergence
 

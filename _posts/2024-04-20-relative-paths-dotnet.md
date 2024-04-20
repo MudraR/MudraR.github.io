@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ".NET Methods don't expand paths"
+title:  ".NET Methods Don't Expand Paths"
 date: 2024-04-19 15:23 -0500
 tags: [powershell, dotnet]
 ---
