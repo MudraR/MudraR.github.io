@@ -3,6 +3,8 @@ layout: post
 title: My CCNA Command Book
 date: 2021-02-06 01:17 -0500
 file_document_path: /assets/pdf/Mudra's Digital Command Book.pdf
+categories: [CCNA, Cisco]
+tags: [Cisco, Routing and Switching]
 ---
 
 ## CCNA Commands

@@ -2,6 +2,8 @@
 layout: post
 title: How is Spanning Tree Protocol Established?
 date: 2020-09-23 013:43 -0500
+categories: [CCNA]
+tags: [Routing and Switching]
 ---
 # Spanning Tree Protocol
 

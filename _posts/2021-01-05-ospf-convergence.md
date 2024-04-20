@@ -2,6 +2,8 @@
 layout: post
 title: OSPF Convergence
 date: 2021-01-05 02:29 -0500
+categories: [CCNA]
+tags: [Routing and Switching]
 ---
 # OSPF Convergence with Messages, Data Structures and the Dijkstra Algorithm
 
