@@ -66,7 +66,7 @@ gitGraph
    merge release tag: "v1.2"
 ```
 
-### Option 3: Using GitHub Action's Event Trigger to Identify the Original Branch of a Tag
+## Option 3: Using GitHub Action's Event Trigger to Identify the Original Branch of a Tag
 
 You can use GitHub Actions to trigger events based on repository activity, such as a release being published. By accessing the `github.event.release.target_commitish` and `github.event.repository.default_branch` variables, you can determine the original branch of a tag.
 
