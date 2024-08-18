@@ -43,12 +43,11 @@ graph LR
 
 
 ## Option 2: Using Git to Determine Tag and Branch Relationship
-The `git branch --contains tags/$tag` command can identify branches associated with a specific tag. However, it has limitations. If a branch merges into master and a tag is created, the command will indicate the tag contains the master branch due to shared commit history.
+The `git branch --contains tags/$tag` command can identify branches associated with a specific tag. However, it has limitations. If a branch that contains the tag is merged into the master branch, the tag will also be part of the master branch. This is because when you merge a branch, you're merging its commit history, which includes any tags associated with those commits.
 
 This could result in deploying code that doesn't match the current master branch state, especially if additional commits were added post-merge. Conversely, this can be useful for rollbacks to a previous code state.
 
-In summary, while this command provides useful information, it's not foolproof for ensuring a tag matches a specific branch's current state. Use it cautiously in deployment processes.
-
+Using git commands is not foolproof for ensuring a tag matches a specific branch's current state. Use it cautiously in deployment processes.
 
 ```mermaid
 gitGraph
