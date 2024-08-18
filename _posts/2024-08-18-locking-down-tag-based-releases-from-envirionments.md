@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Mastering Environment-Specific Deployments with GitHub: A Guide to Tag-Based Releases'
+title: 'Navigating Environment-Specific Deployments with GitHub'
 date: 2024-08-18 01:21 -0500
 categories: [GitHub]
 tags: [GitHub, GitHub Actions, CI/CD, DevOps]
