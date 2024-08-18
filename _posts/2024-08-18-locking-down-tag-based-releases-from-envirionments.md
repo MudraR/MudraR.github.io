@@ -53,17 +53,16 @@ In summary, while this command provides useful information, it's not foolproof f
 ```mermaid
 gitGraph
    commit id: "Initial commit"
-   branch release
-   checkout release
-   commit id: "release work"
-   branch test
-   checkout test
-   commit id: "test work"
-   checkout release
-   merge test tag: "v1.1"
-   commit id: "Another commit"
+   branch develop
+   checkout develop
+   commit id: "develop work"
+   branch feature
+   checkout feature
+   commit id: "feature work"
+   checkout develop
+   merge feature tag: "v1.1"
    checkout main
-   merge release tag: "v1.2"
+   merge develop tag: "v1.2"
 ```
 
 ## Option 3: Using GitHub Action's Event Trigger to Identify the Original Branch of a Tag
