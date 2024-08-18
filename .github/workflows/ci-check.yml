@@ -1,4 +1,4 @@
-name: "Deploy app"
+name: "CI Check"
 on:
   push:
     paths-ignore:
