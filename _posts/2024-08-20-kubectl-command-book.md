@@ -43,12 +43,12 @@ Shortcuts for commonly used Kubernetes resources.
 ## Output Options
 **Options for formatting the output of kubectl commands.**
 
-| Command    | Description                                      |
-|------------|--------------------------------------------------|
-| `-o wide`  | Output additional information.                   |
-| `-o yaml`  | Output the resource in YAML format.              |
-| `-o json`  | Output the resource in JSON format.              |
-| `--dry-run`| Simulate the command without making any changes. |
+| Command     | Description                                      |
+|-------------|--------------------------------------------------|
+| `-o wide`   | Output additional information.                   |
+| `-o yaml`   | Output the resource in YAML format.              |
+| `-o json`   | Output the resource in JSON format.              |
+| `--dry-run` | Simulate the command without making any changes. |
 
 **Options for adjusting verbosity in output**
 
@@ -63,7 +63,6 @@ Shortcuts for commonly used Kubernetes resources.
 | `--v=7`   | Display HTTP request headers, including Application-Type and User Agent.                                                                                                                                     |
 | `--v=8`   | Display HTTP request contents.                                                                                                                                                                               |
 | `--v=9`   | Display HTTP request contents without truncation of contents.                                                                                                                                                |
-
 ## Cluster Information
 Commands for retrieving information about the Kubernetes cluster and its resources.
 
