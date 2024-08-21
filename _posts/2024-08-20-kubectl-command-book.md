@@ -1,10 +1,11 @@
 ---
 layout: post
-title: kubectl Command Book.
+title: kubectl command book
 date: 2024-08-20 20:39 -0500
 categories: [Kubernetes]
 tags: [Kubernetes, CLI]
 ---
+
 This is my digital command book for  `kubectl` commands to interact with K8s clusters. This is a work in progress and will be updated with more detail + descriptions as I go.
 
 ## kubectl command book
@@ -18,17 +19,17 @@ Basic commands for managing Kubernetes contexts and configurations.
 ## Operations
 Common operations for managing Kubernetes resources.
 
-| Command                          | Description                                            |
-|----------------------------------|--------------------------------------------------------|
-| `kubectl apply`                    | Apply a configuration to a resource by file or stdin.  |
-| `kubectl create`                   | Create a resource from a file or from stdin.           |
-| `kubectl run`                      | Run a particular image on the cluster.                 |
-| `kubectl explain`                  | Get documentation for a resource.                      |
-| `kubectl get`                      | List one or more resources.                            |
-| `kubectl get pods`                 | List all pods in the namespace.                        |
-| `kubectl describe`                 | Show detailed information about a resource.            |
-| `kubectl exec`                     | Execute a command in a container.                      |
-| `kubectl logs`                     | Print the logs for a container in a pod.               |
+| Command                          | Description                                            | Example                                                 |
+|----------------------------------|--------------------------------------------------------|---------------------------------------------------------|
+| `kubectl apply`                  | Apply a configuration to a resource by file or stdin.  | `kubectl apply -f ./my-manifest.yaml`                   |
+| `kubectl create`                 | Create a resource from a file or from stdin.           | `kubectl create -f ./my-resource.yaml`                  |
+| `kubectl run`                    | Run a particular image on the cluster.                 | `kubectl run my-nginx --image=nginx`                    |
+| `kubectl explain`                | Get documentation for a resource.                      | `kubectl explain pods`                                  |
+| `kubectl get`                    | List one or more resources.                            | `kubectl get pods`                                      |
+| `kubectl get pods`               | List all pods in the namespace.                        | `kubectl get pods`                                      |
+| `kubectl describe`               | Show detailed information about a resource.            | `kubectl describe pods my-pod`                          |
+| `kubectl exec`                   | Execute a command in a container.                      | `kubectl exec -it my-pod -- /bin/bash`                  |
+| `kubectl logs`                   | Print the logs for a container in a pod.               | `kubectl logs my-pod`                                   |
 
 ## Resource Aliases
 Shortcuts for commonly used Kubernetes resources.
@@ -41,26 +42,27 @@ Shortcuts for commonly used Kubernetes resources.
 
 ## Output Options
 **Options for formatting the output of kubectl commands.**
-| Command | Description |
-|---------|-------------|
-| `-o wide` | Output additional information. |
-| `-o yaml` | Output the resource in YAML format. |
-| `-o json` | Output the resource in JSON format. |
-| `-o dry-run` | Simulate the command without making any changes. |
+
+| Command    | Description                                      |
+|------------|--------------------------------------------------|
+| `-o wide`  | Output additional information.                   |
+| `-o yaml`  | Output the resource in YAML format.              |
+| `-o json`  | Output the resource in JSON format.              |
+| `--dry-run`| Simulate the command without making any changes. |
 
 **Options for adjusting verbosity in output**
+
 | Verbosity | Description                                                                                                                                                                                                 |
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| --v=0     | Generally useful for this to ALWAYS be visible to an operator.                                                                                                                                               |
-| --v=1     | A reasonable default log level if you don’t want verbosity.                                                                                                                                                  |
-| --v=2     | Useful steady state information about the service and important log messages that may correlate to significant changes in the system. This is the recommended default log level for most systems.             |
-| --v=3     | Extended information about changes.                                                                                                                                                                          |
-| --v=4     | Debug level verbosity.                                                                                                                                                                                       |
-| --v=6     | Display requested resources.                                                                                                                                                                                 |
-| --v=7     | Display HTTP request headers. Application-Type and User Agent                                                                                                                                               |
-| --v=8     | Display HTTP request contents.                                                                                                                                                                               |
-| --v=9     | Display HTTP request contents without truncation of contents.                                                                                                                                                |
-
+| `--v=0`   | Generally useful for this to ALWAYS be visible to an operator.                                                                                                                                               |
+| `--v=1`   | A reasonable default log level if you don’t want verbosity.                                                                                                                                                  |
+| `--v=2`   | Useful steady state information about the service and important log messages that may correlate to significant changes in the system. This is the recommended default log level for most systems.             |
+| `--v=3`   | Extended information about changes.                                                                                                                                                                          |
+| `--v=4`   | Debug level verbosity.                                                                                                                                                                                       |
+| `--v=6`   | Display requested resources.                                                                                                                                                                                 |
+| `--v=7`   | Display HTTP request headers, including Application-Type and User Agent.                                                                                                                                     |
+| `--v=8`   | Display HTTP request contents.                                                                                                                                                                               |
+| `--v=9`   | Display HTTP request contents without truncation of contents.                                                                                                                                                |
 
 ## Cluster Information
 Commands for retrieving information about the Kubernetes cluster and its resources.
