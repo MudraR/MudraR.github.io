@@ -72,9 +72,14 @@ The `github.event.release.target_commitish` specifies the commitish (branch) val
 
 This method allows you to restrict deployments to production based on the original branch of a tag. Specifically, you can check if the tag's original branch matches the repository's default branch before deploying to production.
 
+So in your deployment job, you'd want to include an `if` statement like, 
+```yaml
+if: ${{ github.event.release.target_commitish == github.event.repository.default_branch }}
+```
+
 Here's a sample release workflow that demonstrates this approach:
 
-```yml
+```yaml
 name: Release
 
 on:
