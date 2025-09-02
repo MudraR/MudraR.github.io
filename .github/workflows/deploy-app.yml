@@ -52,6 +52,11 @@ jobs:
           bundle exec htmlproofer _site \
             \-\-disable-external=true \
             \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+            
+      - name: Copy ICD-10 app to output folder
+        run: |
+          mkdir -p public/icd10-cm
+          cp -r projects/icd-10/* public/icd10-cm/
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
@@ -68,3 +73,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+          
