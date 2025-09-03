@@ -188,7 +188,8 @@ exclude:
   - LICENSE
   - rollup.config.js
   - package*.json
-
+  - icd10-search
+  
 jekyll-archives:
   enabled: [categories, tags]
   layouts:
