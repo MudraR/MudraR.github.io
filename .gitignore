@@ -20,3 +20,7 @@ package-lock.json
 
 # Misc
 assets/js/dist
+
+# Test builds
+test_build/
+test_full_build/
