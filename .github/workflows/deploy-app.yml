@@ -56,7 +56,7 @@ jobs:
       - name: Copy ICD-10 app to output folder
         run: |
           mkdir -p public/icd10-cm
-          cp -r projects/icd-10/* public/icd10-cm/
+          cp -r icd10-search/* public/icd10-cm/
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
