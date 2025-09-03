@@ -1,0 +1,227 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://deployingthoughts.com/blog/</id>
+  <title>deploying thoughts</title>
+  <subtitle>Blogging about DevOps, networking, GitHub, Azure DevOps, and continous improvement.</subtitle>
+  <updated>2025-09-03T11:23:48-05:00</updated>
+  <author>
+    <name>Mudra Rawal</name>
+    <uri>https://deployingthoughts.com/blog/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://deployingthoughts.com/blog/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://deployingthoughts.com/blog/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Mudra Rawal </rights>
+  <icon>/blog/assets/img/favicons/favicon.ico</icon>
+  <logo>/blog/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>kubectl command book</title>
+    <link href="https://deployingthoughts.com/blog/posts/kubectl-command-book/" rel="alternate" type="text/html" title="kubectl command book" />
+    <published>2024-08-20T20:39:00-05:00</published>
+  
+    <updated>2024-08-20T20:39:00-05:00</updated>
+  
+    <id>https://deployingthoughts.com/blog/posts/kubectl-command-book/</id>
+    <content src="https://deployingthoughts.com/blog/posts/kubectl-command-book/" />
+    <author>
+      <name>Mudra Rawal</name>
+    </author>
+
+  
+    
+    <category term="Kubernetes" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      This is my digital command book for  kubectl commands to interact with K8s clusters. This is a work in progress and will be updated with more detail + descriptions as I go.
+
+kubectl command book
+Basic commands for managing Kubernetes contexts and configurations.
+
+
+  
+    
+      Command
+      Description
+    
+  
+  
+    
+      kubectl config get-contexts
+      List all available contexts and show...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Navigating Environment-Specific Deployments with GitHub</title>
+    <link href="https://deployingthoughts.com/blog/posts/locking-down-tag-based-releases-from-envirionments/" rel="alternate" type="text/html" title="Navigating Environment-Specific Deployments with GitHub" />
+    <published>2024-08-18T01:21:00-05:00</published>
+  
+    <updated>2024-08-18T01:21:00-05:00</updated>
+  
+    <id>https://deployingthoughts.com/blog/posts/locking-down-tag-based-releases-from-envirionments/</id>
+    <content src="https://deployingthoughts.com/blog/posts/locking-down-tag-based-releases-from-envirionments/" />
+    <author>
+      <name>Mudra Rawal</name>
+    </author>
+
+  
+    
+    <category term="GitHub" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Locking Down Tag-Based Releases from Environments
+
+As a DevOps engineer, I’ve always found tag-based releases to be a powerful tool for managing deployments across multiple environments. They offer a level of precision and control that’s hard to match. But the challenge lies in ensuring that only the right branches - those that are production-ready - get deployed in a CI/CD pipeline. Let’s dive...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Using ForEach() Method for Array Iteration</title>
+    <link href="https://deployingthoughts.com/blog/posts/explain-code-gh-copilot/" rel="alternate" type="text/html" title="Using ForEach() Method for Array Iteration" />
+    <published>2024-05-13T05:21:00-05:00</published>
+  
+    <updated>2024-05-13T05:21:00-05:00</updated>
+  
+    <id>https://deployingthoughts.com/blog/posts/explain-code-gh-copilot/</id>
+    <content src="https://deployingthoughts.com/blog/posts/explain-code-gh-copilot/" />
+    <author>
+      <name>Mudra Rawal</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      I learned about a nifty ForEach() powershell method when looping through an array. You can call it on a collection and pass a script block to it!
+
+Context:
+I was recently reading the new docs for GitHub copilot on how you can now use it in the CLI. GitHub launched the gh copilot explain and gh copilot suggest commands as part of the copilot extension in the GitHub CLI.
+
+Example Problem:
+How can...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>.NET Methods Don't Expand Paths</title>
+    <link href="https://deployingthoughts.com/blog/posts/relative-paths-dotnet/" rel="alternate" type="text/html" title=".NET Methods Don&amp;apos;t Expand Paths" />
+    <published>2024-04-19T15:23:00-05:00</published>
+  
+    <updated>2024-04-19T15:23:00-05:00</updated>
+  
+    <id>https://deployingthoughts.com/blog/posts/relative-paths-dotnet/</id>
+    <content src="https://deployingthoughts.com/blog/posts/relative-paths-dotnet/" />
+    <author>
+      <name>Mudra Rawal</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Relative paths are interpreted differently in .NET methods than in PowerShell.
+
+Problem
+I encountered an error when working with the .NET namespace System.Security.Cryptography.X509Certificates. Despite being in the directory where the certificate file was located, the system could not find the file and threw an exception.
+
+
+
+While PowerShell automatically resolves relative paths based on the c...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>My CCNA Command Book</title>
+    <link href="https://deployingthoughts.com/blog/posts/ccna-command-book/" rel="alternate" type="text/html" title="My CCNA Command Book" />
+    <published>2021-02-06T00:17:00-06:00</published>
+  
+    <updated>2021-02-06T00:17:00-06:00</updated>
+  
+    <id>https://deployingthoughts.com/blog/posts/ccna-command-book/</id>
+    <content src="https://deployingthoughts.com/blog/posts/ccna-command-book/" />
+    <author>
+      <name>Mudra Rawal</name>
+    </author>
+
+  
+    
+    <category term="CCNA" />
+    
+    <category term="Cisco" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      CCNA Commands
+
+Here’s a PDF of the command book I created to pass the CCNA 200-301. I will one day convert this into an easy to read Markdown format, but for the time being, I’ve left it downloadable. Please contact me if you need a .docx version of this document so you can edit.
+
+
+
+
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
