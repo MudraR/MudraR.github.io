@@ -54,7 +54,7 @@ jobs:
       - name: Copy ICD10 search app
         run: |
           mkdir -p _site${{ steps.pages.outputs.base_path }}/icd10-search
-          cp -r icd10-search/* _site${{ steps.pages.outputs.base_path }}/icd10-search/
+          cp -r icd10-search/icd-10/* _site${{ steps.pages.outputs.base_path }}/icd10-search/
 
       - name: Create root index page
         run: |
